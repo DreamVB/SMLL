@@ -174,3 +174,35 @@
 </tr>
 </tbody>
 </table>
+
+<P>Count down example</p>
+
+```
+; Count up to 20
+
+PUSH 20
+PUSH 0
+
+STORE A
+STORE B
+
+:loop
+ LOAD A
+ LOAD B
+ LT
+ JIF Add
+ JMP Finish
+
+:Add
+ LOAD A
+ INC
+ STORE A
+ LOAD A
+ PRTD
+ PUSH ','
+ PRTC
+ JMP Loop
+
+:Finish
+halt
+```
