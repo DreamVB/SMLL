@@ -175,7 +175,7 @@
 </tbody>
 </table>
 
-<P>Count down example</p>
+<P>Example</p>
 
 ```
 ; Count up to 20
