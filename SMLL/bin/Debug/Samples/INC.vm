@@ -1,0 +1,16 @@
+; Increment and decrement instructions
+
+PUSH 5
+;INC add 1 to value on stack 5+1 = 6
+INC
+PRTI
+
+PUSH ','
+PRTC
+
+PUSH 4
+;DEC value on stack by 1 4-1 = 3
+DEC
+PRTI
+
+HALT

@@ -1,0 +1,26 @@
+; Output chars 32 to 255
+PUSH 255
+STORE B
+
+PUSH 32
+STORE A
+
+:Compare
+ LOAD B
+ LOAD A
+ LT
+
+JIF Finish
+
+LOAD A
+PRTC
+
+LOAD A
+PUSH 1
+
+ADD
+STORE A
+JMP Compare
+
+:Finish
+ HALT

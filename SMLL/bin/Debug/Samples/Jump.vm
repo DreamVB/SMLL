@@ -1,0 +1,10 @@
+JMP Start
+;Skip the two lines
+PUSH 10
+PRTD
+
+; Code starts here
+:Start
+ PUSH 65
+ PRTC
+ HALT

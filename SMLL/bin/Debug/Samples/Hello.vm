@@ -1,0 +1,17 @@
+; Output Hello
+
+PUSH 'H'
+PRTC
+PUSH 'e'
+PRTC
+PUSH 'l'
+PRTC
+PUSH 'l'
+PRTC
+PUSH 'o'
+PRTC
+PUSH '!'
+PRTC
+PUSH  10
+PRTC
+HALT

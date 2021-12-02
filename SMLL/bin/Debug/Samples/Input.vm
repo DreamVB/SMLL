@@ -1,0 +1,15 @@
+; Input value from console
+
+INP
+STORE A
+
+INP
+STORE B
+
+LOAD A
+LOAD B
+ADD
+
+PRTD
+
+HALT

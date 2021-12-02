@@ -1,0 +1,7 @@
+; Divide two numbers
+
+PUSH 5
+PUSH 2
+DIV
+PRTD
+HALT

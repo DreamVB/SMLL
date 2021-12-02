@@ -1,0 +1,27 @@
+; Count down from 20
+
+PUSH 0
+PUSH 20
+
+STORE A
+STORE B
+
+:loop
+ LOAD A
+ LOAD B
+ GT
+ JIF Down
+ JMP Finish
+
+:Down
+ LOAD A
+ PRTD
+ PUSH ','
+ PRTC
+ LOAD A
+ DEC
+ STORE A
+ JMP loop
+
+:Finish
+halt

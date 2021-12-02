@@ -1,0 +1,20 @@
+; Adding two variables a and b and returning the result in c
+
+; A = 15
+PUSH 15
+STORE A
+
+; B = 5
+PUSH 5
+STORE B
+
+LOAD A
+LOAD B
+ADD
+
+; C = A + B
+STORE C
+LOAD C
+PRTI
+
+HALT

@@ -1,0 +1,9 @@
+; Load 20 on the stack
+PUSH 20
+; Duplicate 20 on tge top stack
+DUP
+; Add the two stack items
+ADD
+; Show result
+PRTI
+HALT

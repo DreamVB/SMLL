@@ -1,0 +1,23 @@
+; echo until input equals 0
+
+
+:loop
+  INP
+  STORE A
+  LOAD A
+  JIFZ end
+  JMP loop
+
+:end
+ PUSH 'D'
+ PRTC
+ PUSH 'o'
+ PRTC
+ PUSH 'n'
+ PRTC
+ PUSH 'e'
+ PRTC
+ PUSH 10
+ PRTC
+ halt
+

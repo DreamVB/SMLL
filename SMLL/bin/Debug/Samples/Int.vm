@@ -1,0 +1,18 @@
+; Convert double to int
+
+PUSH 3.141
+STORE A
+LOAD A
+PRTD
+
+PUSH 10
+PRTC
+LOAD A
+; Store the value in A as an Integer in B
+INT
+STORE B
+
+LOAD B
+PRTI
+
+HALT

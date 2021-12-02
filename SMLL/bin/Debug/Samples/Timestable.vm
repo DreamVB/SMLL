@@ -1,0 +1,43 @@
+INP
+STORE A
+
+PUSH 12
+STORE B
+
+PUSH 1
+STORE C
+
+:DoMult
+
+ LOAD C
+ PRTD
+ PUSH '*'
+ PRTC
+ 
+ LOAD A
+ PRTD
+ 
+ PUSH '='
+ PRTC 
+
+ LOAD C
+ LOAD A
+ MUL
+ PRTI
+
+PUSH 10
+PRTC
+
+LOAD B
+LOAD C
+LTE
+JIF Finish
+
+LOAD C
+INC
+STORE C
+
+JMP DoMult
+
+:Finish
+ HALT

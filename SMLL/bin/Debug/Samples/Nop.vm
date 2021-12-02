@@ -1,0 +1,11 @@
+; NOP
+
+NOP
+PUSH 255
+; Do nothing
+NOP
+NOP
+NOP
+NOP
+PRTI
+HALT

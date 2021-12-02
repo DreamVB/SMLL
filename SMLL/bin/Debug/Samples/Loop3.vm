@@ -1,0 +1,24 @@
+; Output 999 a number of times
+
+PUSH 999
+STORE A
+
+; Get user to enter a number
+INP
+STORE B
+
+:Loop
+ LOAD B
+ JIFZ Finish
+ LOAD B
+ DEC
+ STORE B
+ LOAD A
+ PRTI
+ ; Print a line break after 999 is printed above
+ PUSH 10
+ PRTC
+ JMP Loop
+
+:Finish
+Halt

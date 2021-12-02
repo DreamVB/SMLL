@@ -1,0 +1,16 @@
+;Test if the two items on the stack are equal
+
+PUSH 5
+PUSH 6
+EQ
+PRTI
+
+PUSH ','
+PRTC
+
+PUSH 2
+PUSH 2
+EQ
+PRTI
+
+HALT

@@ -1,0 +1,25 @@
+PUSH 10
+PUSH 50
+
+STORE A
+STORE B
+
+LOAD A
+LOAD B
+
+GT
+JIF Here
+
+LOAD B
+STORE C
+JMP Finish
+
+:Here
+ LOAD A
+ STORE C
+ JMP Finish
+
+:Finish
+ LOAD C
+ PRTD
+ halt

@@ -1,0 +1,7 @@
+; Add two numbers
+
+PUSH 2.5
+PUSH 2.5
+ADD
+PRTI
+HALT
